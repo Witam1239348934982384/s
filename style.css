@@ -1,0 +1,464 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+  section:target {
+    scroll-margin-top: 70px;
+  }
+
+body{
+   background-color: rgb(48, 48, 48);
+   
+
+}
+span{ 
+    text-decoration: underline;
+   font-weight: bold;
+   color: #e2e2e2;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 60%;
+  }
+
+  header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgb(31, 31, 31);
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    width: 100%;
+    z-index: 2;
+  }
+  header h1{
+    margin-right: auto;
+  }
+  .zdjecie{
+    backdrop-filter: blur(20px);
+    user-select: none;
+    
+  }
+    .aa{
+       margin-right: 2%;
+       text-decoration: none;
+       color: #c2c2c2;
+       font-size: 20px;
+    font-weight: bold;
+    }
+    .aa:hover{
+    transition: 0.3s;
+    animation: animacja 2s infinite;  
+  }
+  @keyframes animacja{
+    0% {
+      color: red;
+    }
+    50% {
+      color: blue;
+    }
+    100% {
+      color: red;
+    }
+  }
+    
+
+
+  nav {
+    margin-right: 30px;
+    font-size: 20px;
+    
+  }
+  
+  nav ul {
+    list-style: none; 
+  }
+  
+  nav li {
+    display: inline-block; 
+    margin-left: 20px; 
+    
+  }
+  
+  nav a {
+    text-decoration: none; 
+    color: #c2c2c2; 
+  }
+  
+  nav a:hover {
+    
+    color: rgb(105, 105, 105);
+    transition: 0.3s;
+    
+    
+  }
+
+  /* pierwsza sekcja */
+  
+  section.first{
+    color: rgb(211, 210, 210);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+   background-image: url(https://i.gremicdn.pl/image/free/892378aa10df7d374896ada5d2d852da/?t=crop:1466:909:nowe:67:0,resize:fill:1200:716,enlarge:1);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   
+}
+
+  article.first{
+    width: 70%;
+   border-radius: 20px;
+  padding: 25px;
+  border: 2px solid rgba(0,0,0,0.2);
+  background-color: rgba(105, 104, 104, 0.9);
+  margin: 30px 0px
+  
+ 
+  
+  
+  
+  }
+  article.drugi{
+    width: 70%;
+    border-radius: 20px;
+    padding: 25px;
+    border: 2px solid rgba(0,0,0,0.2);
+    background-color: rgba(105, 104, 104, 0.9);
+    margin: 30px 0px
+    
+  }
+  article.trzeci{
+    width: 70%;
+    border-radius: 20px;
+    padding: 25px;
+    border: 2px solid rgba(0,0,0,0.2);
+    background-color: rgba(105, 104, 104, 0.9);
+    margin: 30px 0px
+  }
+  
+
+  @media (max-width: 490px) {
+  
+     section.first{
+      font-size: 15px;
+    }
+     article.first{
+      margin-top: 50px;
+      
+    }
+  }
+  @media (max-width: 360px) {
+  
+    article.first{
+      margin-top: 50px;
+   }
+   nav ,h1{
+    font-size: 10px;
+   }
+   .aa{
+    font-size: 15px;
+   }
+ }
+ 
+ @media (max-width: 300px) {
+  
+  article.first{
+    margin-top: 50px;
+ }
+ 
+ nav ,h1{
+  font-size: 15px;
+ }
+}
+  
+
+@media (max-width: 400px){
+  section.druga{
+   font-size: 18px;
+  }
+}
+
+
+
+
+
+/* druga sekcja */
+
+
+section.druga{
+    color: rgb(41, 41, 41);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+@media (max-width: 300px){
+     section.druga{
+      font-size: 17px;
+     }
+    }
+article.p{
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/898c2038-c428-452c-84bf-034d5c48ca8e/bvlatuR/std/4096x2560/Model-S-homepage-desktop);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+      
+  
+  }
+  article.d{
+    
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/a269d7b4-87a9-4057-9ac5-2565e56a188e/bvlatuR/std/4096x2560/Homepage-Model-3-Desktop-LHD?quality=auto-medium&format=auto);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+  }
+  article.t{
+    
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/05a76324-947e-453b-a628-8b2d759756fa/bvlatuR/std/2880x1800/Homepage-Model-X-Desktop-LHD?quality=auto-medium&format=auto);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  /* wyglad paragrafow */
+  section.druga article p{
+
+    padding: 10px 5px;
+    width: 70%;
+    border: 2px solid rgba(138, 138, 138, 0.1);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  section.druga label{
+    padding: 10px 5px;
+    width: 25%;
+    border: 2px solid rgba(158, 157, 157, 0.1);
+    background-color: rgba(78, 78, 78, 0.8);
+    border-radius: 15px;
+    margin: 20px 0;
+    color: rgb(212, 212, 212);
+    text-align: center;
+    user-select: none;
+  }
+
+@media (max-width: 700px) {
+  section.druga article p,section.druga label{
+    margin: 10px;
+  }
+
+}
+
+  
+  /* ukrywanie checkbox */
+  .ukrywaniecheckbox {
+    display: none;
+  }
+  
+  #toggle:checked + .ukrywaniecheckbox {
+    display: block;
+  }
+  /* drugie auto */
+  
+  #toggle1:checked + .ukrywaniecheckbox {
+    display: block;
+  }
+  /* trzecie */
+  
+  #toggle2:checked + .ukrywaniecheckbox {
+    display: block;
+  }
+  
+  /* wylaczenie widocznosci checkbox */
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  /* sekcja trzecia */
+  section.trzecia{
+height: 160vh;
+background-image: url(https://www.adv1wheels.com/wp-content/uploads/2019/10/matte-purple-vinyl-wrapped-tesla-model-x-black-adv1-wheels-a.jpg);
+background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+   
+}
+
+.form{
+    width: 400px;
+    border: 2px solid purple;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 3px 3px 5px black;
+    color: rgb(238, 238, 238);
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 100px;
+    
+    
+    
+}
+
+#wyslij{
+  border: 1px solid rgba(87, 1, 87,0.3);
+  background-color: rgba(121, 1, 121, 0.9);
+  padding: 5px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px black;
+  text-transform: uppercase;
+  
+  
+}
+
+input, textarea{
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.0);
+  border: 2px solid rgba(109, 0, 109, 0.8) ;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px black;
+  resize: vertical;
+  max-height: 300px;
+  
+}
+
+
+@media (max-width: 768px) {
+  
+  .form {
+    width: 250px;
+  }
+}
+@media (max-width: 330px) {
+  
+  .form {
+    width: 210px;
+  }
+}
+
+
+
+form , .form{
+  text-align: center;
+}
+
+
+
+
+
+
+  table {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 500px;
+    box-shadow: 2px 2px 4px black;
+    backdrop-filter: blur(7px);
+    color: white;
+    
+    
+
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  
+  
+  th {
+    background-color: rgb(77, 1, 77);
+    font-weight: bold;
+  }
+  
+  td:first-child {
+    font-weight: bold;
+
+  }
+  
+  
+  @media (max-width: 768px) {
+  
+    table {
+      width: 250px;
+    }
+  }
+ 
+
+  
+ 
+ 
+  
+  
+  /* footer */
+  footer{
+    
+    top: -30px;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    height: 0px;
+    text-decoration: solid;
+    font-size: 20px;
+    
+  }
+  @media (max-width: 768px) {
+  
+    footer {
+      
+      font-size: 10px;
+    }
+  }
